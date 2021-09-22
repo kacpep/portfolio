@@ -2,6 +2,11 @@
 
 Portfolio strona: https://ostrowskiprograming.github.io/ostrowskiprograming/index.html
 
+- 🔭 I’m currently working on Portfolio
+- 🌱 I’m currently learning php,animation css,html,js...
+- 👯 I’m looking to cooperation on the website
+- 📫 How to reach me: GitHub
+
 Aktualnie uczę się w ZST
 
 <!--
