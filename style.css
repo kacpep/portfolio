@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#111)) fixed;*/
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+#loader{
+    margin:auto ;
+    box-sizing:border-box ;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    animation: fade 1s linear 6.9s forwards;
+}
+#content{
+    background-image: url(img/backgraund1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    opacity:0;
+    animation: show 1s linear 8s forwards;
+}
+nav{
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+}
+nav > ul{
+    list-style: none;
+    margin: 23px;
+}
+nav > ul > li{
+    display: inline;
+    margin-left: 20px;
+
+}
+.text{
+    position: absolute;
+    display: inline;
+    top: 30%;
+    right: 20px;
+    margin: 50px;
+    width: 35%;
+    text-align: center;
+}
+.text > h2{
+
+}
+#logo{
+    position: absolute;  
+    letter-spacing: 4px;
+    margin: 40px;
+    font-size: 50px;
+    top: 35%;
+    z-index: 98;
+}
+#text_animation_ostrowski{
+	position: absolute;  
+    animation: coming_bottom  2s forwards;
+    letter-spacing: 4px;
+    margin: 40px;
+    font-size: 50px;
+    z-index: 99;
+    width: 260px;
+}
+#text_animation_ostrowski > span{
+    position: absolute;
+    visibility: hidden;
+    animation: coming_right1 2s forwards 2s;
+
+}
+#text_animation_programing{
+	position: absolute;  
+    visibility: hidden;
+    letter-spacing: 4px;
+    margin: 40px;
+    font-size: 50px;
+    top: 35%;
+    animation: coming_right2  2s forwards 4s;
+    z-index: 98;
+}
+
+#color_black{
+    display: inline;
+    float: left;
+    width: 50%;
+    background-color: #000;
+    opacity: 0.85;
+    height: 100vh;
+    content: " ";
+    z-index: 1;
+}
+
+
+@keyframes coming_bottom {
+    from{
+        top: 0; 
+    }
+    to{
+        top: 35%;  
+    }
+}
+@keyframes coming_right1 {
+    from{
+        left: -300px;
+    }
+    to{
+        visibility: visible;
+        left: 33.5px;
+    }
+}
+@keyframes coming_right2 {
+    from{
+        left: -400px;
+    }
+    to{
+        visibility: visible;
+        left: 260px;
+    }
+}
+@keyframes show{
+    from {opacity:0;}
+    to{opacity:1;}
+}
+@keyframes fade{
+    from {opacity:1;}
+    to{opacity:0;}
+}
