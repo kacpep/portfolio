@@ -1,13 +1,12 @@
 ### Witam na moim profilu!
 
-Portfolio strona: https://ostrowskiprograming.github.io/ostrowskiprograming/index.html
-
 - 🔭 I’m currently working on Portfolio
 - 🌱 I’m currently learning php,animation css,html,js...
 - 👯 I’m looking to cooperation on the website
+- 🏫 I'm currently studying at ZST 
 - 📫 How to reach me: GitHub
 
-Aktualnie uczę się w ZST
+Portfolio strona: https://ostrowskiprograming.github.io/ostrowskiprograming/index.html
 
 <!--
 **ostrowskiprograming/ostrowskiprograming** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
