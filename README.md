@@ -1,6 +1,6 @@
 ### Witam na moim profilu!
 
-Portfolio strona: 
+Portfolio strona: https://ostrowskiprograming.github.io/ostrowskiprograming/index.html
 
 Aktualnie uczę się w ZST
 
