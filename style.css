@@ -22,7 +22,7 @@ body{
     top:0;
     right:0;
     bottom:0;
-    animation: fade 1s linear 6.9s forwards;
+    animation: fade 1s linear 8s forwards;
 }
 #content{
     background-image: url(img/backgraund1.jpg);
@@ -31,7 +31,7 @@ body{
     width:100%;
     height:100%;
     opacity:0;
-    animation: show 1s linear 8s forwards;
+    animation: show 1s linear 9s forwards;
 }
 nav{
     position: absolute;
@@ -45,9 +45,53 @@ nav > ul{
 nav > ul > li{
     display: inline;
     margin-left: 20px;
+    cursor: pointer;
 
 }
-.text{
+nav > ul > li > a{
+    color: #ddd;
+}
+nav > ul > li > a:hover{
+    color: #fff;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    text-shadow: 2px 2px #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .active:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    text-shadow: 2px 2px #fff;
+  }
+  .active{
+      color: #fff;
+  }
+#text{
     position: absolute;
     display: inline;
     top: 30%;
@@ -56,9 +100,14 @@ nav > ul > li{
     width: 35%;
     text-align: center;
 }
-.text > h2{
-
+.text_animation_text{
+    animation: show 1s linear;
 }
+.text_animation_text2{
+    animation: show2 1s linear;
+}
+
+
 #logo{
     position: absolute;  
     letter-spacing: 4px;
@@ -69,7 +118,7 @@ nav > ul > li{
 }
 #text_animation_ostrowski{
 	position: absolute;  
-    animation: coming_bottom  2s forwards;
+    animation: coming_bottom  2s forwards 1s;
     letter-spacing: 4px;
     margin: 40px;
     font-size: 50px;
@@ -79,7 +128,7 @@ nav > ul > li{
 #text_animation_ostrowski > span{
     position: absolute;
     visibility: hidden;
-    animation: coming_right1 2s forwards 2s;
+    animation: coming_right1 2s forwards 4s;
 
 }
 #text_animation_programing{
@@ -89,7 +138,7 @@ nav > ul > li{
     margin: 40px;
     font-size: 50px;
     top: 35%;
-    animation: coming_right2  2s forwards 4s;
+    animation: coming_right2  2s forwards 6s;
     z-index: 98;
 }
 
@@ -135,6 +184,11 @@ nav > ul > li{
     from {opacity:0;}
     to{opacity:1;}
 }
+@keyframes show2{
+    from {opacity:0;}
+    to{opacity:1;}
+}
+
 @keyframes fade{
     from {opacity:1;}
     to{opacity:0;}
