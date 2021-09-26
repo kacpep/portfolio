@@ -13,39 +13,40 @@
 
 </head>
 <body>
-    <div id="loader">
-        <p id="text_animation_ostrowski" >
-            o<span>strowski</span>        
-        </p>
-        <p id="text_animation_programing" >
-            programing
-        </p>
-    </div>
+	<div id="loader">
+		<p id="text_animation_ostrowski" >
+			o<span>strowski</span>        
+		</p>
+		<p id="text_animation_programing" >
+			programing
+		</p>
+	</div>
+
+
     <div id="content">
 
-        <div id="color_black">
-            <p id="logo">ostrowski programing</p>
-        </div>
+		<div id="color_black">
+			<p id="logo">ostrowski programing</p>
+		</div>
 
 
         <div id="right">
             <nav>
                 <ul>
-                    <li><a href="/">Dom</a></li>
-                    <li><a href="/">Projekty</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a class="hover-underline-animation active" onclick="Home()" id="Home">Dom</a></li>
+                    <li><a class="hover-underline-animation" onclick="Project()" id="Project">Projekty</a></li>
+                    <li><a class="hover-underline-animation" onclick="Contact()" id="Contact">Kontakt</a></li>
+					<li><a class="hover-underline-animation" onclick="priceList()" id="PriceList">Cennik</a></li>
                 </ul>
             </nav>
 
-            <div class="text">
-                <h2>Abaut us</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat posuere convallis. Donec vestibulum, dolor ac faucibus blandit, purus turpis consequat nibh, nec maximus diam velit id lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam blandit justo ut eros ultrices condimentum. Phasellus at iaculis lacus, eget hendrerit massa. Nullam ut mattis lacus. Sed a dolor dictum erat congue tempus. Sed sem odio, tempor vel facilisis a, feugiat id magna. Suspendisse pellentesque maximus aliquet. Phasellus justo risus, dapibus at consequat eget, facilisis nec nulla.
-                </p>
+            <div id="text" class="text_animation_text">
+                
             </div>
         </div>
 
     </div>
+	<script src="loder_text.js"></script>
     
 </body>
 </html>
