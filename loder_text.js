@@ -29,7 +29,7 @@ function Contact() {
     document.querySelector("#Contact").classList.add("active");
     document.querySelector("#text").classList.toggle("text_animation_text2");
     document.querySelector("#text").classList.toggle("text_animation_text");
-    document.getElementById("text").innerHTML = '<h2>Kontakt</h2> <p>Standardowy fragment Lorem Ipsum używany od XVI wieku jest przedstawiony poniżej dla zainteresowanych. Sekcje 1.10.32 i 1.10.33 z "de Finibus Bonorum et Malorum" Cycerona są również reprodukowane w ich dokładnej oryginalnej formie, wraz z angielskimi wersjami przekładu H. Rackhama z 1914 roku.</p>';
+    document.getElementById("text").innerHTML = '<div id="contenier_form"><form action="/" method="post"><label for="mail">E-mail:</label><br><input class="hover-underline-animation" type="text"><br><label for="message">Wiadomość:</label><br><textarea class="hover-underline-animation"  ></textarea><br><input class="button" type="submit" value="Wyślij!"></form></div>';
 }
 
 function priceList() {
@@ -39,7 +39,7 @@ function priceList() {
     document.querySelector("#PriceList").classList.add("active");
     document.querySelector("#text").classList.toggle("text_animation_text2");
     document.querySelector("#text").classList.toggle("text_animation_text");
-    document.getElementById("text").innerHTML = '<h2>Cennik</h2> <p>Standardowy fragment Lorem Ipsum używany od XVI wieku jest przedstawiony poniżej dla zainteresowanych. Sekcje 1.10.32 i 1.10.33 z "de Finibus Bonorum et Malorum" Cycerona są również reprodukowane w ich dokładnej oryginalnej formie, wraz z angielskimi wersjami przekładu H. Rackhama z 1914 roku.</p>';
+    document.getElementById("text").innerHTML = '<h2>Cennik</h2> <table ><tbody><tr><td>Podstawowa strona:</td><td>50zł + hosting+domena</td></tr><tr><td>Zawansowana strona:</td><td>Indwidualna cena uzgadniana meail.</td></tr><tr><td>Wizytówka e-mail:</td><td>30zł</td></tr></tbody></table>';
 }
 
 
