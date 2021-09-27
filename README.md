@@ -6,7 +6,7 @@
 - 🏫 I'm currently studying at ZST 
 - 📫 How to reach me: GitHub
 
-Portfolio website: https://ostrowskiprograming.github.io/ostrowskiprograming/index.html
+Portfolio website: https://ostrowskiprograming.github.io/ostrowskiprograming/
 
 <!--
 **ostrowskiprograming/ostrowskiprograming** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
