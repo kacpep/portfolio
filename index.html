@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="mediaMin-width.css" />
     <script src="jquery-3.6.0.min.js"></script>
     <title>ostrowski programing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
 
     <div id="content">
 
-		<div id="color_black">
+		<div id="color_black" class="logo_font">
 			<p id="logo"><span onclick="istereeg()" id="istereeg">o</span>strowski programing</p>
 		</div>
 		
@@ -33,16 +34,20 @@
 		<div id="color_white">
 			<div id="right">
 				<nav>
-					<ul>
-						<li><a class="hover-underline-animation active" onclick="Home()" id="Home">Dom</a></li>
-						<li><a class="hover-underline-animation" onclick="Project()" id="Project">Projekty</a></li>
-						<li><a class="hover-underline-animation" onclick="Contact()" id="Contact">Kontakt</a></li>
-						<li><a class="hover-underline-animation" onclick="priceList()" id="PriceList">Cennik</a></li>
-					</ul>
+					<div click="menu()" id="menu"></div>
+					<div class="sidebar">
+						<ul>
+							<li><a class="hover-underline-animation active" onclick="Home()" id="Home">Dom</a></li>
+							<li><a class="hover-underline-animation" onclick="Project()" id="Project">Projekty</a></li>
+							<li><a class="hover-underline-animation" onclick="Contact()" id="Contact">Kontakt</a></li>
+							<li><a class="hover-underline-animation" onclick="priceList()" id="PriceList">Cennik</a></li>
+						</ul>
+					</div>
+
 				</nav>
 
 				<div id="text" class="text_animation_text">
-					
+					<h2>O mnie</h2> <p>Witam na mojej stronie znajdziesz tu moje projekty i formularz kontaktowy. Zajmuje się programowaniem stron już 3 lata, cały czas pogłębiam swoją wiedzę. Programuje w takich językach: Html, Css, JavaScript, PHP. Również programowałem w języku Python.  Strony które tworzę są responsywne. Lubię tworzyć proste strony ale to nie znaczy, że nie zrobię skomplikowanej strony. Aktualnie tworzę wszystko na własnych projektach.</p>
 				</div>
 			</div>
 		</div>
@@ -51,7 +56,8 @@
 			<a href="mailto:kacper.ostrowski777@gmail.com"><img src="img/gmail_logo.png" alt="E-mail"></a>
 		</footer>
     </div>
-	<script src="loder_text.js"></script>
-    <script src="istereeg.js"></script>
+	<!--<script src="istereeg.js"></script>-->
+	<script src="menu.js"></script>
+    <script src="loder_text.js"></script>
 </body>
 </html>
