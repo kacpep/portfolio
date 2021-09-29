@@ -36,22 +36,21 @@ body{
 nav{
     position: absolute;
     right: 40px;
-    font-size: 20px;
 }
-nav > ul{
+nav ul{
     list-style: none;
     margin: 23px;
 }
-nav > ul > li{
+nav ul li{
     display: inline;
     margin-left: 20px;
     cursor: pointer;
 
 }
-nav > ul > li > a{
+nav ul li a{
     color: #ddd;
 }
-nav > ul > li > a:hover{
+nav ul li a:hover{
     color: #fff;
 }
 .hover-underline-animation {
@@ -92,14 +91,85 @@ nav > ul > li > a:hover{
   .active{
       color: #fff;
   }
+/*hamburger menu*******************************************************************************/
+.sidebar {
+    position: fixed;
+    right: -600px;
+    top: 0;
+    transition: all .5s ease;
+  }
+  .sidebar ul{
+    margin: 0;
+  }
+  .sidebar ul li{
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .sidebar ul li:last-child {
+    padding-right: 90px;
+  }
+  .sidebar ul a{
+    height: 100%;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /*-------------------------------------------------------------------------------------------------*/
+  #menu{
+      z-index: 99;
+      top: 30px;
+      right: 10px;
+      float: right;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 35px;
+      height: 3px;
+      position: relative;
+      background-color: #ffffff;
+  }
+      #menu::before,
+      #menu::after{
+          border-radius: 4px;
+          content: '';
+          display: block;
+          position: absolute;
+          width: 35px;
+          height: 3px;
+          background-color: #ffffff;
+      }
+      #menu::after{
+          transition-duration: 0.5s;
+          top: 10px; 
+      }
+      #menu::before{
+          transition-duration: 0.5s;
+          top: -10px;
+      }
+  
+  
+  .is_active{
+      transition-duration: 0.5s;
+      transform: rotate(45deg);
+  }
+      #menu.is_active::before{
+          transition-duration: 0.5s;
+          transform: translate3d(-4px, -9px, 10px);
+          opacity: 0;
+      }
+      #menu.is_active::after{
+          transition-duration: 0.5s;
+          top:0;
+          transform: rotate(-90deg);
+   
+      }
+/*************************************************************************************/
 #text{
     position: absolute;
     display: inline;
     top: 30%;
-    right: 20px;
-    margin: 50px;
-    width: 35%;
     text-align: center;
+    margin: 20px;
 }
 .text_animation_text{
     animation: show 1s linear;
@@ -109,8 +179,6 @@ nav > ul > li > a:hover{
 }
 #contenier_form{
     padding: 30px;
-    width: 500px;
-    margin-top: -50px;
    /* font-size: 20px;
     background-color: rgba(00, 00, 00, 0.6);
     border-radius: 10px;*/
@@ -132,7 +200,7 @@ textarea{
     border-bottom: 2px #fff solid;
     background-color: transparent;
     outline: transparent;
-    width: 120%;
+    width: 100%;
     max-width: 100%;
     padding: 5px;
     min-height: 100px;
@@ -153,7 +221,6 @@ label{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     transition: 0.8s ease;
 }
 .button:hover{
@@ -166,7 +233,6 @@ label{
     position: absolute;  
     letter-spacing: 4px;
     margin: 40px;
-    font-size: 50px;
     top: 35%;
     z-index: 98;
 }
@@ -175,7 +241,6 @@ label{
     animation: coming_bottom  2s forwards 1s;
     letter-spacing: 4px;
     margin: 40px;
-    font-size: 50px;
     z-index: 99;
     width: 260px;
 }
@@ -190,7 +255,6 @@ label{
     visibility: hidden;
     letter-spacing: 4px;
     margin: 40px;
-    font-size: 50px;
     top: 35%;
     animation: coming_right2  2s forwards 6s;
     z-index: 98;
@@ -204,7 +268,6 @@ table{
 }
 
 table td,th {
-    font-size: 14px;
     border-bottom: 2px solid #fff;
     padding: 12px 0 5px 5px;
     text-align: left;
@@ -213,6 +276,9 @@ table td,th {
 h2{
     margin: 20px;
 }
+#text > p > a{
+    color: #0f0;
+}
 footer{
     position: fixed;
     right: 20px;
@@ -220,7 +286,6 @@ footer{
 }
 footer > a > img{
     margin: 10px;
-    width: 30%;
     transition: 0.8s ease;
 }
 footer >a >img:hover{
@@ -238,8 +303,6 @@ footer >a >img:hover{
 }
 #color_white{
     display: inline;
-    float: right;
-    width: 50%;
     background-color: #000;
     opacity: 0.75;
     height: 100vh;
@@ -273,6 +336,24 @@ footer >a >img:hover{
         left: 260px;
     }
 }
+@keyframes coming_right1_min {
+    from{
+        left: -300px;
+    }
+    to{
+        visibility: visible;
+        left: 15.5px;
+    }
+}
+@keyframes coming_right2_min {
+    from{
+        left: -400px;
+    }
+    to{
+        visibility: visible;
+        left: 140px;
+    }
+}
 @keyframes show{
     from {opacity:0;}
     to{opacity:1;}
@@ -286,12 +367,13 @@ footer >a >img:hover{
     from {opacity:1;}
     to{opacity:0;}
 }
-@keyframes rotation {
+@keyframes rotate {
     from{
         transform: rotate(0deg);
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
     to{
-
+        transform: rotate(50deg);
+        margin-bottom: 20px;
     }
 }

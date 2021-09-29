@@ -1,0 +1,132 @@
+@media (min-width: 0px){
+    #menu{
+        visibility: visible;
+    }
+    #menu.is_active ~ .sidebar{
+        right:  0;
+    }
+    .sidebar ul li{
+        margin-right: 0px;
+    }
+    #color_black{
+        font-size: 1.8em;
+        visibility: hidden;
+        display: none;
+        float: none;
+    }
+    #text{
+        margin: 20px 5% 0 5%;
+        width: 80%;
+    }
+    #color_white{
+        width: 100%;
+    }
+    #loader{
+        font-size: 1.3em;
+    }
+    #text_animation_ostrowski{
+        animation: coming_bottom  2s forwards 1s;
+    }
+    #text_animation_ostrowski > span{
+        animation: coming_right1_min 2s forwards 3.5s;
+    
+    }
+    #text_animation_programing{
+        animation: coming_right2_min  2s forwards 6s;
+    }
+    footer{
+        right: 0;
+        bottom: 0;
+        margin-right: -30px;
+    }
+    footer > a > img{
+        width: 18%;
+    }
+    nav{
+        font-size: 0.8em;
+    }
+    #text{
+        font-size: 0.7em;
+        width: 90%;
+    }
+}
+@media(min-width: 581px){
+    nav{
+        font-size: 0.9em;
+    }
+    #text{
+        font-size: 0.8em;
+    }
+}
+@media(min-width: 781px){
+    .sidebar{
+        right:  0;
+    }
+    #menu{
+        visibility: hidden;
+    }
+    #color_black{
+        visibility: visible;
+        display: inline;
+    }
+    #color_white{
+        width: 50%;
+        float: right;
+    }
+    #text{
+        margin: 50px;
+        width: 35%;
+    }
+    #loader{
+        font-size: 3em;
+    }
+    #text_animation_ostrowski{
+        animation: coming_bottom  2s forwards 1s;
+    }
+    #text_animation_ostrowski > span{
+        animation: coming_right1 2s forwards 3.5s;
+    
+    }
+    #text_animation_programing{
+        animation: coming_right2  2s forwards 6s;
+    }
+
+    nav{
+        font-size: 1.4em;
+    }
+    #text{
+        font-size: 1em;
+    }
+
+
+}
+@media(min-width: 1024px){
+    #color_black{
+        font-size: 2.3em;
+    }
+    #text{
+        width: 35%;
+    }
+
+
+}
+@media(min-width: 1200px){
+    #color_black{
+        font-size: 3em;
+    }
+    footer > a > img{
+        margin: 10px;
+        width: 30%;
+        transition: 0.8s ease;
+    }
+    footer{
+        margin: 20px;
+    }
+
+}
+    
+@media(min-width: 1600px){
+    #contenier_form{
+        width: 600px;
+    }
+}
