@@ -6,7 +6,7 @@ function Home() {
 	document.querySelector("#text").classList.toggle("text_animation_text2");
 	document.querySelector("#text").classList.toggle("text_animation_text");
 	document.getElementById("text").innerHTML =
-		"<h2>O mnie</h2> <p>Witam na mojej stronie znajdziesz tu moje projekty i formularz kontaktowy. Zajmuje się pisaniem stron już 3 lata, cały czas pogłębiam swoją wiedzę. Piszę w takich językach: Html, Css, JavaScript, PHP. Również programowałem w języku Python.  Strony które tworzę są responsywne. Lubię tworzyć proste strony ale to nie znaczy, że nie zrobię skomplikowanej strony. Aktualnie tworzę wszystko na własnych projektach.</p>";
+		"<h2>O mnie</h2> <p>Witam na mojej stronie znajdziesz tu moje projekty i mail kontaktowy. Zajmuje się pisaniem stron już 3 lata, cały czas pogłębiam swoją wiedzę. Piszę w takich językach: Html, Css, JavaScript, PHP. Również programowałem w języku Python.  Strony które tworzę są responsywne. Lubię tworzyć proste strony ale to nie znaczy, że nie zrobię skomplikowanej strony. Aktualnie tworzę wszystko na własnych projektach.</p>";
 }
 
 function Project() {
